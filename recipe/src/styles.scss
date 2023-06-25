@@ -1,7 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+.btn-success {
+  --bs-btn-bg: #06adb2;
+}
+.btn-primary {
+  --bs-btn-bg: #2967e1;
+}
+.btn-danger {
+  --bs-btn-bg: #e12960;
+}
+
+.btn-success.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: darkcyan;
+  border-color: var(--bs-btn-hover-border-color);
+}
+.btn-primary.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: rgb(6, 83, 166);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn{
+    width: 100%;
+}
