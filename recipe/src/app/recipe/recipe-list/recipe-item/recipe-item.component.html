@@ -1,1 +1,6 @@
-<p>recipe-item works!</p>
+<img [src]="rec.image" class="card-img-top img-responsive" [alt]="rec.name" />
+<div class="card-body">
+  <h5 class="card-title">{{ rec.description }}</h5>
+  <p class="card-text">{{ rec.name }}</p>
+  <a href="#" class="btn btn-primary">View Recipe</a>
+</div>

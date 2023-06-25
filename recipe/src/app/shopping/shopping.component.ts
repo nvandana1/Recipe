@@ -1,3 +1,4 @@
+import { Ingredient } from './ingredient.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ShoppingComponent {
 
+  ingredients:Ingredient[]=[new Ingredient('Potato',1,'Kg')]
 }

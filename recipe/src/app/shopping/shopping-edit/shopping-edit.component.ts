@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Ingredient } from './../ingredient.model';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./shopping-edit.component.scss']
 })
 export class ShoppingEditComponent {
-
+@Input() item!:Ingredient;
 }
