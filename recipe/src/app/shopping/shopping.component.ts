@@ -1,4 +1,4 @@
-import { Ingredient } from './ingredient.model';
+import { Ingredient } from '../../assets/model/ingredient.model';
 import { Component } from '@angular/core';
 
 @Component({
