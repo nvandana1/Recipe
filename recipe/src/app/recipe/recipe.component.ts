@@ -1,3 +1,4 @@
+import { RecipeService } from './../../common/recipeService/recipe.service';
 import { Recipe } from './recipe.model';
 import { Component, OnInit } from '@angular/core';
 
@@ -21,9 +22,13 @@ export class RecipeComponent implements OnInit {
     ),
   ];
 
-  constructor() {}
+  constructor(private recipeService:RecipeService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.recipeService.setRecipes(this.recipe)
+    const rec = this.recipeService.getRecipes()
+    console.log(rec)
+  }
 
   sendRecipe($event: any) {
     this.selectedRecipe = $event;

@@ -1,5 +1,5 @@
 import { Recipe } from './../../recipe.model';
-import { Component ,Input} from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-recipe-item',
@@ -7,6 +7,10 @@ import { Component ,Input} from '@angular/core';
   styleUrls: ['./recipe-item.component.scss']
 })
 export class RecipeItemComponent {
+@Output() sendRecipe = new EventEmitter();
   @Input() rec!:Recipe;
-
+  constructor(){}
+  selectedItem(recipe: Recipe) {
+   this.sendRecipe.emit(recipe)
+  }
 }
