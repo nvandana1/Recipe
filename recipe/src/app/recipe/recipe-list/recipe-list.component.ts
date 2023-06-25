@@ -7,14 +7,8 @@ import { Component,Input,Output,EventEmitter } from '@angular/core';
   styleUrls: ['./recipe-list.component.scss']
 })
 export class RecipeListComponent {
-
-@Output() recipeEmitter=new EventEmitter();
-
 @Input() recipe!:Recipe[];
 
 constructor(){}
 
-selectedRecipe(recipe: Recipe) {
-this.recipeEmitter.emit(recipe)
-}
 }

@@ -27,10 +27,11 @@ export class RecipeComponent implements OnInit {
   ngOnInit() {
     this.recipeService.setRecipes(this.recipe)
     const rec = this.recipeService.getRecipes()
-    console.log(rec)
+    console.log(rec);
+
+    this.recipeService.selectedRecipe.subscribe((recipe:Recipe)=>{
+      this.selectedRecipe = recipe
+    })
   }
 
-  sendRecipe($event: any) {
-    this.selectedRecipe = $event;
-  }
 }
