@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+:root{
+    --bs-tertiary-bg-rgb: 200, 281, 231;
+}
 html,
 body {
   height: 100%;
@@ -16,7 +18,7 @@ body {
   --bs-btn-bg: #06adb2;
 }
 .btn-primary {
-  --bs-btn-bg: #2967e1;
+  --bs-btn-bg: #1354aa;
 }
 .btn-danger {
   --bs-btn-bg: #e12960;
@@ -29,10 +31,22 @@ body {
 }
 .btn-primary.btn:hover {
   color: var(--bs-btn-hover-color);
-  background-color: rgb(6, 83, 166);
+  background-color: rgb(4, 39, 76);
   border-color: var(--bs-btn-hover-border-color);
+}
+
+.bg-body-tertiary {
+    --bs-tertiary-bg-rgb: 200, 281, 231;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .btn{
     width: 100%;
+}
+.card{
+    margin-bottom: 1rem;
+}
+.col-3{
+    min-width: 30%;
 }

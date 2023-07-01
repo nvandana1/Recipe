@@ -1,9 +1,9 @@
 <div class="row gy-4">
-  <div class="col-xs-12">
+  <div class="col-md-3">
     <button class="btn btn-success col-md-5">Add</button>
   </div>
   <div class="col-xs-12">
-    <div class="card" style="max-width: 18rem;" *ngFor="let rec of recipe">
+    <div class="card" style="max-width: 100%;" *ngFor="let rec of recipe">
       <app-recipe-item [rec]="rec"></app-recipe-item>
       </div>
   </div>

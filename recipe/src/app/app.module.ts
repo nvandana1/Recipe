@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {FormsModule} from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,7 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     NgbModule,
