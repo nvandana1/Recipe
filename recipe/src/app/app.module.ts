@@ -19,8 +19,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     RecipeComponent,
-    ShoppingComponent,RecipeListComponent,RecipeDetailsComponent,RecipeItemComponent,ShoppingComponent,ShoppingEditComponent
-    
+    ShoppingComponent,
+    RecipeListComponent,
+    RecipeDetailsComponent,
+    RecipeItemComponent,
+    ShoppingComponent,
+    ShoppingEditComponent,
   ],
   imports: [
     BrowserModule,
