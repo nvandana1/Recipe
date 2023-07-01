@@ -7,6 +7,8 @@ const routes: Routes = [{
   path:'recipe',component:RecipeComponent
 },{
   path:'shopping',component:ShoppingComponent
+},{
+  path:'',redirectTo:'recipe', pathMatch:'full'
 }];
 
 @NgModule({
