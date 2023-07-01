@@ -1,6 +1,7 @@
 import { RecipeService } from './../../common/recipeService/recipe.service';
 import { Recipe } from './recipe.model';
 import { Component, OnInit } from '@angular/core';
+import { Ingredient } from 'src/assets/model/ingredient.model';
 
 @Component({
   selector: 'app-recipe',
@@ -14,11 +15,11 @@ export class RecipeComponent implements OnInit {
     new Recipe(
       'Pav Bhaji',
       'A bun and masala curry',
-      'assets/image/pavBhaji.jpeg'
+      'assets/image/pavBhaji.jpeg',[new Ingredient('Pav bread',1,'pack')]
     ),new Recipe(
       'Carrot halwa',
       'A Dessert from carrot',
-      'assets/image/carrothalwa.jpeg'
+      'assets/image/carrothalwa.jpeg',[new Ingredient('Carrot',1,'piece')]
     ),
   ];
 
